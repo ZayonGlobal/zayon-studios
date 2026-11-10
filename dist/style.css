@@ -11,3 +11,60 @@ body{background:#0a0908}header{height:90px;border:0;padding:0 4%;position:relati
 .pin h3{font-size:15px;font-weight:500;letter-spacing:-.2px;line-height:1.3;text-transform:none;margin:12px 2px 0}
 .pin .visual .arrow{width:36px;height:36px;font-size:18px;right:12px;bottom:12px}
 @media(max-width:700px){.masonry{gap:12px}.masonry-col{gap:18px}.pin .visual{border-radius:10px}.pin h3{font-size:13px;margin-top:8px}}
+button.pin{display:block;width:100%;padding:0;border:0;background:none;color:inherit;text-align:left;font:inherit;cursor:zoom-in}
+/* Flyer viewer controls */
+dialog .lb-nav{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:14px;font-size:13px;letter-spacing:.5px;color:#cfcfc2}
+dialog .lb-nav[hidden],dialog .lb-nav button[hidden]{display:none}
+dialog .lb-nav button{position:static;width:44px;height:44px;border:1px solid #55554a;border-radius:50%;font-size:18px;color:#f4f0e8;background:transparent;display:grid;place-items:center}
+dialog .lb-nav button:hover,dialog .lb-nav button:focus-visible{background:#f04438;border-color:#f04438;color:#161810}
+/* Homepage: category buttons */
+.cat-buttons{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:48px;max-width:1100px}
+.cat-buttons a{display:flex;align-items:center;gap:14px;padding:18px 20px;border:1px solid #3b3b32;font-size:15px;transition:background .25s,color .25s,border-color .25s}
+.cat-buttons small{font-size:10px;letter-spacing:1.5px;color:#8f8f82;transition:color .25s}
+.cat-buttons span{flex:1}
+.cat-buttons b{font-weight:400;font-size:18px;transition:transform .25s}
+.cat-buttons a:hover,.cat-buttons a:focus-visible{background:#f04438;border-color:#f04438;color:#161810}
+.cat-buttons a:hover small,.cat-buttons a:focus-visible small{color:#161810}
+.cat-buttons a:hover b{transform:translate(3px,-3px)}
+/* Work: category picker */
+.work-hub{padding-bottom:110px}
+.hub-head{padding:40px 0 34px;display:grid;grid-template-columns:1fr auto;align-items:end;gap:20px 40px}
+.hub-head .eyebrow{grid-column:1/-1}
+.work-hub .hub-head h1{font-size:clamp(46px,6.2vw,100px);margin:0}
+.hub-head p{margin:0;max-width:320px;color:#b9b9ab;line-height:1.6}
+.hub-head p a{display:inline-block;margin-top:10px;color:#f4f0e8;border-bottom:1px solid #f04438;padding-bottom:3px}
+.hub-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.hub-card{display:block;perspective:1100px;outline:none}
+.hub-face{position:relative;transform-style:preserve-3d;transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .3s;border:1px solid #2f2f29;border-radius:16px;background:#141510;padding:14px 14px 20px}
+.hub-card:hover .hub-face{border-color:#4a4a40}
+.hub-card:focus-visible .hub-face{border-color:#f04438}
+.hub-media{position:relative;aspect-ratio:4/5;transform-style:preserve-3d}
+.hub-media .layer{position:absolute;object-fit:cover;border-radius:10px;box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.hub-media .l0{inset:0;width:100%;height:100%}
+.hub-media .l1{width:48%;aspect-ratio:1;right:-7%;bottom:10%;transform:translateZ(70px)}
+.hub-media .l2{width:40%;aspect-ratio:1;left:-6%;top:8%;transform:translateZ(40px)}
+.hub-info{padding:20px 6px 0;transform:translateZ(30px)}
+.hub-info h2{font-size:clamp(20px,2vw,30px);font-weight:800;letter-spacing:-.04em;margin:8px 0 6px;text-transform:uppercase;line-height:1}
+.hub-info p{margin:0;color:#a8a89b;font-size:13px}
+.hub-go{position:absolute;right:18px;bottom:22px;width:40px;height:40px;border-radius:50%;background:#f04438;color:#161810;display:grid;place-items:center;font-size:18px;transform:translateZ(50px)}
+.web-mock{position:absolute;inset:0;border-radius:10px;background:linear-gradient(160deg,#1f211a,#10110d);border:1px solid #33342c;padding:12% 10%;display:flex;flex-direction:column;gap:9%;transform-style:preserve-3d;box-sizing:border-box}
+.web-mock .bar{display:flex;gap:6px}
+.web-mock .bar i{width:9px;height:9px;border-radius:50%;background:#3d3e35}
+.web-mock .bar i:first-child{background:#f04438}
+.web-mock .hero-block{flex:1;border-radius:8px;background:linear-gradient(135deg,#f04438,#ff9468);transform:translateZ(60px);box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.web-mock .row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;height:22%;transform:translateZ(30px)}
+.web-mock .row i{border-radius:6px;background:#2c2d25}
+/* Work: inside a category */
+.cat-view .cat-head{padding:45px 0 6px}
+.cat-back{display:inline-block;padding:8px 0;color:#b9b9ab;transition:color .2s}
+.cat-back:hover,.cat-back:focus-visible{color:#f04438}
+.cat-view .cat-head h1{font-size:clamp(52px,8vw,128px);margin:18px 0 10px}
+.soon-card{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;border:1px solid #2f2f29;border-radius:16px;padding:40px;perspective:1000px}
+.soon-card .web-mock{position:relative;inset:auto;aspect-ratio:4/3;width:100%;max-width:440px;justify-self:center;transform:rotateY(16deg) rotateX(6deg)}
+.soon-card .round-link{display:inline-flex}
+.soon-card h3{font-size:clamp(26px,3vw,44px);letter-spacing:-.04em;margin:12px 0 14px;font-weight:700;line-height:1.05}
+.soon-card p{color:#b9b9ab;line-height:1.7;max-width:460px;margin:0 0 26px}
+@media(max-width:900px){.cat-buttons{grid-template-columns:1fr 1fr}.hub-grid{grid-template-columns:1fr 1fr;gap:12px}.hub-head{grid-template-columns:1fr;padding-top:40px}.hub-face{padding:10px 10px 16px;border-radius:12px}.hub-go{width:32px;height:32px;font-size:15px;right:12px;bottom:14px}.hub-info{padding:14px 34px 0 4px}.hub-info h2{font-size:17px;line-height:1.05}.hub-info p{font-size:12px}}
+@media(max-width:800px){.soon-card{grid-template-columns:1fr;padding:22px;gap:28px}.soon-card .web-mock{transform:none}}
+@media(max-width:420px){.cat-buttons{gap:8px;margin-top:36px}.cat-buttons a{padding:15px 13px;font-size:14px;gap:9px}}
+.load[hidden]{display:none}
