@@ -4,7 +4,7 @@ import {projectOutcomes,projectStrategy} from './project-outcomes.js';
 import {campaignGalleryKeep} from './curated.js';
 
 // Graphic design work is shown as part of Social media.
-const asSocial=project=>project.category==='graphic'?{...project,category:'social',type:'Social media design'}:project;
+const asSocial=project=>project.category==='graphic'?{...project,category:'social',type:'Social media design',formerly:'graphic'}:project;
 
 export const projects=[...baseProjects,...additionalProjects].map(asSocial).map(project=>{
   const keep=campaignGalleryKeep[project.slug];
