@@ -100,3 +100,16 @@ dialog .lb-nav button:hover,dialog .lb-nav button:focus-visible{background:#f044
 .portrait{height:auto;aspect-ratio:1}
 @media(max-width:800px){.how{padding:44px 0 56px}.how-grid{grid-template-columns:1fr;gap:10px}.how-card{display:grid;grid-template-columns:44px 1fr;column-gap:16px;padding:18px 18px 20px}.how-top{grid-row:1/3;display:block;margin:0}.how-top .eyebrow{display:block;margin-top:10px;text-align:center}.how-icon{width:44px;height:44px}.how-icon svg{width:20px;height:20px}.how-card h3{font-size:18px;margin:4px 0 6px}.how-card p{font-size:14px;line-height:1.55}}
 .about-head h1{font-size:clamp(46px,8.6vw,150px)}
+/* Homepage: about section */
+.home-about{padding:90px 0 100px;border-top:1px solid #36362e}
+.ha-top{display:grid;grid-template-columns:1.2fr 1fr;gap:36px 80px;align-items:end}
+.ha-head .eyebrow{margin:0 0 22px}
+.home-about h2{font-size:clamp(34px,3.7vw,58px);line-height:1.02;letter-spacing:-.04em;font-weight:900;text-transform:uppercase;margin:0}
+.home-about h2 i{color:#f04438}
+.ha-copy p{color:#b9b9ab;line-height:1.7;margin:0 0 26px;max-width:520px;font-size:17px}
+.ha-copy .round-link{display:inline-flex}
+.ha-services{margin-top:84px}
+.ha-services .services{margin-top:16px}
+.services summary>span{display:grid;grid-template-columns:52px 1fr;align-items:baseline}
+.services summary small{white-space:nowrap}
+@media(max-width:800px){.home-about{padding:56px 0 64px}.ha-top{grid-template-columns:1fr;gap:22px}.home-about h2{font-size:clamp(30px,8.4vw,40px)}.ha-copy p{font-size:16px;margin-bottom:22px}.ha-services{margin-top:52px}.services summary{font-size:18px;gap:16px}.services summary>span{grid-template-columns:38px 1fr}}
