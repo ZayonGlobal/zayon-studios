@@ -86,3 +86,16 @@ dialog .lb-nav button:hover,dialog .lb-nav button:focus-visible{background:#f044
 .site-visit{font-size:12px;letter-spacing:1px;text-transform:uppercase;border-bottom:1px solid #f04438;padding-bottom:3px}
 .site-visit:hover,.site-visit:focus-visible{color:#f04438}
 @media(max-width:800px){.sites{grid-template-columns:1fr;gap:44px}}
+/* About: How we work cards */
+.how{padding:70px 0 90px;border-top:1px solid #36362e}
+.how>.eyebrow{margin:0 0 28px}
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.how-card{border:1px solid #2f2f29;border-radius:16px;background:#141510;padding:28px 26px 30px;transition:border-color .3s,transform .4s cubic-bezier(.2,.8,.2,1)}
+.how-card:hover{border-color:#4a4a40;transform:translateY(-4px)}
+.how-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:34px}
+.how-icon{width:52px;height:52px;border-radius:50%;background:#f04438;color:#161810;display:grid;place-items:center}
+.how-icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.how-card h3{font-size:clamp(20px,1.9vw,26px);font-weight:800;letter-spacing:-.03em;text-transform:uppercase;line-height:1.05;margin:0 0 12px}
+.how-card p{margin:0;color:#b9b9ab;line-height:1.65;font-size:15px}
+.portrait{height:auto;aspect-ratio:1}
+@media(max-width:800px){.how{padding:44px 0 56px}.how-grid{grid-template-columns:1fr;gap:10px}.how-card{display:grid;grid-template-columns:44px 1fr;column-gap:16px;padding:18px 18px 20px}.how-top{grid-row:1/3;display:block;margin:0}.how-top .eyebrow{display:block;margin-top:10px;text-align:center}.how-icon{width:44px;height:44px}.how-icon svg{width:20px;height:20px}.how-card h3{font-size:18px;margin:4px 0 6px}.how-card p{font-size:14px;line-height:1.55}}
