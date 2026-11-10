@@ -113,3 +113,11 @@ dialog .lb-nav button:hover,dialog .lb-nav button:focus-visible{background:#f044
 .services summary>span{display:grid;grid-template-columns:52px 1fr;align-items:baseline}
 .services summary small{white-space:nowrap}
 @media(max-width:800px){.home-about{padding:56px 0 64px}.ha-top{grid-template-columns:1fr;gap:22px}.home-about h2{font-size:clamp(30px,8.4vw,40px)}.ha-copy p{font-size:16px;margin-bottom:22px}.ha-services{margin-top:52px}.services summary{font-size:18px;gap:16px}.services summary>span{grid-template-columns:38px 1fr}}
+/* Homepage about: compact */
+.home-about{padding:72px 0 76px}
+.ha-services{margin-top:52px;padding-top:22px;border-top:1px solid #2a2b24;display:flex;align-items:baseline;gap:20px 40px}
+.ha-services .eyebrow{margin:0;white-space:nowrap}
+.ha-list{display:flex;flex-wrap:wrap;gap:10px 30px;list-style:none;margin:0;padding:0;font-size:16px;color:#e9e5dc}
+.ha-list small{font-size:10px;letter-spacing:1.5px;color:#8f8f82;margin-right:9px}
+@media(max-width:800px){.home-about{padding:52px 0 56px}.ha-services{display:block;margin-top:38px}.ha-services .eyebrow{margin-bottom:14px}.ha-list{flex-direction:column;gap:9px;font-size:15px}}
+.ha-list small{display:inline-block;min-width:22px}
