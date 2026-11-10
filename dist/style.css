@@ -99,3 +99,4 @@ dialog .lb-nav button:hover,dialog .lb-nav button:focus-visible{background:#f044
 .how-card p{margin:0;color:#b9b9ab;line-height:1.65;font-size:15px}
 .portrait{height:auto;aspect-ratio:1}
 @media(max-width:800px){.how{padding:44px 0 56px}.how-grid{grid-template-columns:1fr;gap:10px}.how-card{display:grid;grid-template-columns:44px 1fr;column-gap:16px;padding:18px 18px 20px}.how-top{grid-row:1/3;display:block;margin:0}.how-top .eyebrow{display:block;margin-top:10px;text-align:center}.how-icon{width:44px;height:44px}.how-icon svg{width:20px;height:20px}.how-card h3{font-size:18px;margin:4px 0 6px}.how-card p{font-size:14px;line-height:1.55}}
+.about-head h1{font-size:clamp(46px,8.6vw,150px)}
