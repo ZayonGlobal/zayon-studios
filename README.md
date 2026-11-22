@@ -22,6 +22,12 @@ The pages use JavaScript modules, so serve the folder rather than opening the fi
 npx serve dist
 ```
 
+## Motion
+
+`dist/motion.js` adds the scroll and motion layer: smooth momentum scrolling (Lenis), scroll-driven scenes and word reveals (GSAP + ScrollTrigger), magnetic buttons, rolling nav links and a curtain transition between pages. The libraries are bundled in `dist/vendor/` so nothing loads from a CDN. Home page scenes: the showreel that grows to full screen, the pinned "What about Zayon?" cards, the WE CREATE wall and the statement that lights up word by word.
+
+The MOTION ON/OFF button and the visitor's reduced-motion setting turn all of it off and fall back to the static layout. The Work hub and category pages keep their own 3D transitions in `app.js`.
+
 ## Notes
 
 - Paths are root-relative (`/style.css`, `/assets/...`), so serve the site from the root of a domain or subdomain.
